@@ -1,0 +1,3 @@
+kw1
+SELECT DISTINCT wpis FROM `zadania` WHERE dataZadania BETWEEN "2020-07-01" and "2020-07-07" and wpis <> "";
+kw2
