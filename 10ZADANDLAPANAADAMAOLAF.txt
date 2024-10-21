@@ -1,0 +1,67 @@
+using System;
+
+public class HelloWorld {
+    // ZAD 61
+    public static double PoleTrojkota(double a, double h) {
+        return a * h / 2;
+    }
+
+    // ZAD 62
+    public static double PoleKwadrata(double a) {
+        return a * a;
+    }
+
+    // ZAD 63
+    public static double PoleTrapezu(double a, double b, double h) {
+        return (a + b) * h / 2;
+    }
+
+    // ZAD 64
+    public static double PoleRownolegloboku(double a, double h) {
+        return a * h;
+    }
+
+    // ZAD 65
+    public static double PoleRombu(double a, double h) {
+        return a * h;
+    }
+
+    // ZAD 66
+    public static double PoleSzesciokata(double a) {
+        return 3 * a * a * Math.Sqrt(3) / 2;
+    }
+
+    // ZAD 67
+    public static double Polekola(double pi, double r) {
+        return pi * r * r;
+    }
+
+    // ZAD 68
+    public static double Polewycinkakolowego(double r, double alpha) {
+        return alpha * Math.PI * r * r / 360;
+    }
+
+    // ZAD 69
+    public static double Dlugosckola(double r) {
+        return 2 * Math.PI * r;
+    }
+
+    // ZAD 70
+    public static double dlugoscWycinkaOkregu(double r, double alpha) {
+        return alpha / 360 * 2 * Math.PI * r;
+    }
+
+    public static void Main(string[] args) {
+        // Przykładowe testy
+        Console.WriteLine(PoleTrojkota(5, 4));            // ZAD 61
+        Console.WriteLine(PoleKwadrata(5));               // ZAD 62
+        Console.WriteLine(PoleTrapezu(5, 4, 2));          // ZAD 63
+        Console.WriteLine(PoleRownolegloboku(5, 3));      // ZAD 64
+        Console.WriteLine(PoleRombu(6, 7));               // ZAD 65
+        Console.WriteLine(PoleSzesciokata(5));            // ZAD 66
+        Console.WriteLine(Polekola(3.14, 5));             // ZAD 67
+        Console.WriteLine(Polewycinkakolowego(2, 45));    // ZAD 68
+        Console.WriteLine(Dlugosckola(8));                // ZAD 69
+        Console.WriteLine(dlugoscWycinkaOkregu(2, 30));   // ZAD 70
+    }
+}
